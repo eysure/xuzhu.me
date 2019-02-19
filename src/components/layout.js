@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
+import Footer from "./footer";
 import "./layout.css";
 
 const Layout = ({ children }) => (
@@ -25,22 +26,9 @@ const Layout = ({ children }) => (
                         width: "100%"
                     }}
                 >
-                    <div
-                        style={{
-                            margin: `0 auto`,
-                            maxWidth: 1280
-                        }}
-                    >
-                        {children}
-                    </div>
+                    {children}
                 </main>
-                <footer>
-                    <div className="columns">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est odit ad iusto perferendis! Accusamus corporis, esse non harum
-                        distinctio quis sit recusandae deleniti laborum placeat tempore inventore beatae exercitationem.
-                    </div>
-                    <div className="copyright">© {new Date().getFullYear()} Xinyang Zhu. All rights reserved. </div>
-                </footer>
+                <Footer />
             </>
         )}
     />

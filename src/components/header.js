@@ -11,16 +11,16 @@ const Header = () => (
                     <img className="header-logo" alt="Xyzhu.me" src={xyzhu} />
                 </div>
             </Link>
-            <Link to="/projects">
+            <Link to="/resume">
                 <div>Resume</div>
             </Link>
-            <Link to="/">
+            <Link to="/projects">
                 <div>Projects</div>
             </Link>
-            <Link to="/">
+            <Link to="/life">
                 <div>Life</div>
             </Link>
-            <Link to="/">
+            <Link to="/contact">
                 <div>Contact</div>
             </Link>
         </div>
