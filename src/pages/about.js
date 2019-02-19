@@ -9,7 +9,7 @@ export default () => (
     <Layout>
         <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
         <p>Hi, this is the about page</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <div style={{ maxWidth: `300px` }}>
             <Image />
         </div>
         <Link to="/">Go Home</Link>
