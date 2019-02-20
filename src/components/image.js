@@ -40,7 +40,21 @@ const query = graphql`
                 }
             }
         }
+        project_carousel: file(relativePath: { eq: "project.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         resume_carousel: file(relativePath: { eq: "helloquence-51716-unsplash.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        about_carousel: file(relativePath: { eq: "utd.jpg" }) {
             childImageSharp {
                 fluid(maxHeight: 2160) {
                     ...GatsbyImageSharpFluid

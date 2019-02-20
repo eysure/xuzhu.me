@@ -11,7 +11,7 @@ export default class ResumePage extends Component {
     render() {
         return (
             <Layout>
-                <SEO title="Life" keywords={[`gatsby`, `application`, `react`]} />
+                <SEO title="Resume" keywords={[`gatsby`, `application`, `react`]} />
                 <Carousel
                     imgKey="resume_carousel"
                     title={

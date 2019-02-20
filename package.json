@@ -3,7 +3,7 @@
     "private": true,
     "description": "Personal website of Xinyang Zhu",
     "version": "0.1.0",
-    "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "author": "Xinyang Zhu <xinyangzhu@hotmail.com>",
     "dependencies": {
         "@material-ui/core": "^3.9.2",
         "braces": "^2.3.2",

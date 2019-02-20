@@ -2,18 +2,21 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Image from "../components/image";
+import Carousel from "../components/carousel";
 
 const AboutPage = () => (
     <Layout>
         <SEO title="Life" keywords={[`gatsby`, `application`, `react`]} />
-        <div className="carousel">
-            <Image className="carousel-image" />
-            <div className="carousel-title">
-                <h1>More About Me</h1>
-                <h2>A programmer for ultimate user experience</h2>
-            </div>
-        </div>
+        <Carousel
+            imgKey="about_carousel"
+            title={
+                <>
+                    <h1>More About Me</h1>
+                    <h2>This page is in construction now, please come latter</h2>
+                </>
+            }
+            cite="University of Texas at Dallas, Richardson, TX © Xinyang Zhu 2018"
+        />
     </Layout>
 );
 
