@@ -13,20 +13,46 @@ import Img from "gatsby-image";
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = props => (
-    <StaticQuery
-        query={graphql`
-            query {
-                placeholderImage: file(relativePath: { eq: "nikita-kachanovsky-445394-unsplash.jpg" }) {
-                    childImageSharp {
-                        fluid(maxWidth: 2880, maxHeight: 1200) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
+export default function(props) {
+    return <StaticQuery query={query} render={data => <Img fluid={data[props.imgKey || "none"].childImageSharp.fluid} {...props} />} />;
+}
+
+const query = graphql`
+    query {
+        none: file(relativePath: { eq: "nikita-kachanovsky-445394-unsplash.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
                 }
             }
-        `}
-        render={data => <Img {...props} fluid={data.placeholderImage.childImageSharp.fluid} />}
-    />
-);
-export default Image;
+        }
+        home_carousel: file(relativePath: { eq: "computer.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        fof_carousel: file(relativePath: { eq: "denver.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        resume_carousel: file(relativePath: { eq: "helloquence-51716-unsplash.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        contact_me_carousel: file(relativePath: { eq: "manhattan.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 2160) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`;

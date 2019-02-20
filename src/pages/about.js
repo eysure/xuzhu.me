@@ -1,17 +1,20 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
+import Image from "../components/image";
 
-export default () => (
+const AboutPage = () => (
     <Layout>
-        <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
-        <p>Hi, this is the about page</p>
-        <div style={{ maxWidth: `300px` }}>
-            <Image />
+        <SEO title="Life" keywords={[`gatsby`, `application`, `react`]} />
+        <div className="carousel">
+            <Image className="carousel-image" />
+            <div className="carousel-title">
+                <h1>More About Me</h1>
+                <h2>A programmer for ultimate user experience</h2>
+            </div>
         </div>
-        <Link to="/">Go Home</Link>
     </Layout>
 );
+
+export default AboutPage;

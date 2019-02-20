@@ -1,5 +1,4 @@
 import { Link } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import xyzhu from "../images/xyzhu_white.svg";
 
@@ -17,8 +16,8 @@ const Header = () => (
             <Link to="/projects">
                 <div>Projects</div>
             </Link>
-            <Link to="/life">
-                <div>Life</div>
+            <Link to="/about">
+                <div>About</div>
             </Link>
             <Link to="/contact">
                 <div>Contact</div>
@@ -26,13 +25,5 @@ const Header = () => (
         </div>
     </header>
 );
-
-Header.propTypes = {
-    siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-    siteTitle: ``
-};
 
 export default Header;
