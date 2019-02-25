@@ -104,6 +104,9 @@ const IndexPage = () => (
                     <Icon iconKey="oracle" /> Oracle Database
                 </div>
                 <div className="skill-badge">
+                    <Icon iconKey="apache" /> Apache HTTP Server
+                </div>
+                <div className="skill-badge">
                     <Icon iconKey="aws" /> Amazon Web Service
                 </div>
                 <div className="skill-badge">

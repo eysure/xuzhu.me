@@ -68,5 +68,26 @@ const query = graphql`
                 }
             }
         }
+        p_aquariusos: file(relativePath: { eq: "p_aquariusos.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        p_dalao: file(relativePath: { eq: "p_dalao.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        p_xyzhu: file(relativePath: { eq: "p_xyzhu.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `;

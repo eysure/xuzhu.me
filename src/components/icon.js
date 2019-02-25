@@ -173,6 +173,13 @@ const query = graphql`
                 }
             }
         }
+        apache: file(relativePath: { eq: "icons/apache.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         android: file(relativePath: { eq: "icons/android.png" }) {
             childImageSharp {
                 fluid(maxHeight: 512) {
