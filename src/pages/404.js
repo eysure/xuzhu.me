@@ -15,7 +15,8 @@ const NotFoundPage = () => (
                 <>
                     <h1>404</h1>
                     <h2>
-                        Sorry, but I can't find anything about <b>{window.location.pathname.slice(1)}</b>
+                        Sorry, but I can't find anything about{" "}
+                        <b>{typeof window !== "undefined" ? window.location.pathname.slice(1) : "what you looking for"}</b>
                     </h2>
                     <div className="flex-row" style={{ marginTop: "32px" }}>
                         <button
