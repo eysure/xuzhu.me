@@ -6,7 +6,7 @@ import Carousel from "../components/carousel";
 
 const AboutPage = () => (
     <Layout>
-        <SEO title="Life" keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
         <Carousel
             imgKey="about_carousel"
             title={

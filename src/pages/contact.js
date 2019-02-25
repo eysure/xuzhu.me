@@ -14,30 +14,20 @@ const ContactPage = () => (
                 <>
                     <h1>Let's connect</h1>
                     <div className="sm-list">
-                        <a href="mailto:xinyangzhu@hotmail.com">
-                            <button className="dark">
-                                <i className="sm-icons">k</i>xinyangzhu@hotmail.com
-                            </button>
+                        <a className="button dark" href="mailto:xinyangzhu@hotmail.com">
+                            <i className="sm-icons">k</i>xinyangzhu@hotmail.com
                         </a>
-                        <a href="https://www.linkedin.com/in/xinyangzhu/" target="_blank" rel="noopener noreferrer">
-                            <button className="dark">
-                                <i className="sm-icons">C</i>xinyangzhu
-                            </button>
+                        <a className="button dark" href="https://www.linkedin.com/in/xinyangzhu/" target="_blank" rel="noopener noreferrer">
+                            <i className="sm-icons">C</i>xinyangzhu
                         </a>
-                        <a href="https://github.com/eysure" target="_blank" rel="noopener noreferrer">
-                            <button className="dark">
-                                <i className="sm-icons">)</i>eysure
-                            </button>
+                        <a className="button dark" href="https://github.com/eysure" target="_blank" rel="noopener noreferrer">
+                            <i className="sm-icons">)</i>eysure
                         </a>
-                        <a href="https://www.facebook.com/mr.xyzhu" target="_blank" rel="noopener noreferrer">
-                            <button className="dark">
-                                <i className="sm-icons">E</i>mr.xyzhu
-                            </button>
+                        <a className="button dark" href="https://www.facebook.com/mr.xyzhu" target="_blank" rel="noopener noreferrer">
+                            <i className="sm-icons">E</i>mr.xyzhu
                         </a>
-                        <a href="https://www.instagram.com/_eysure" target="_blank" rel="noopener noreferrer">
-                            <button className="dark">
-                                <i className="sm-icons">Q</i>_eysure
-                            </button>
+                        <a className="button dark" href="https://www.instagram.com/_eysure" target="_blank" rel="noopener noreferrer">
+                            <i className="sm-icons">Q</i>_eysure
                         </a>
                     </div>
                 </>

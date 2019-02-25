@@ -21,8 +21,9 @@ export default class ResumePage extends Component {
                                 className="button dark"
                                 href="https://docs.google.com/document/export?format=pdf&id=1w81QS9r4sta0MFz4QKj7qDqU5Zi7eXf236_bhiIkUi0"
                             >
-                                Take a copy
+                                Download my resume
                             </a>
+                            <span className="san-serif">It may take few seconds for Google Docs to transcode.</span>
                         </>
                     }
                     cite="Photo by Helloquence on Unsplash"

@@ -47,6 +47,13 @@ const query = graphql`
                 }
             }
         }
+        php: file(relativePath: { eq: "icons/php.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
         react: file(relativePath: { eq: "icons/react.png" }) {
             childImageSharp {
                 fluid(maxHeight: 512) {

@@ -7,6 +7,7 @@ import Section from "../components/section";
 import { Link } from "gatsby";
 import Icon from "../components/icon";
 import Divider from "../components/divider";
+import SocialMedia from "../components/social_media";
 
 const IndexPage = () => (
     <Layout>
@@ -49,6 +50,9 @@ const IndexPage = () => (
                 </div>
                 <div className="skill-badge">
                     <Icon iconKey="python" /> Python
+                </div>
+                <div className="skill-badge">
+                    <Icon iconKey="php" /> PHP
                 </div>
             </div>
             <hr />
@@ -100,10 +104,10 @@ const IndexPage = () => (
                     <Icon iconKey="oracle" /> Oracle Database
                 </div>
                 <div className="skill-badge">
-                    <Icon iconKey="firebase" /> Google Firebase
+                    <Icon iconKey="aws" /> Amazon Web Service
                 </div>
                 <div className="skill-badge">
-                    <Icon iconKey="aws" /> Amazon Web Service
+                    <Icon iconKey="firebase" /> Google Firebase
                 </div>
                 <div className="skill-badge">
                     <Icon iconKey="alibaba_cloud" /> Alibaba Cloud
@@ -117,19 +121,15 @@ const IndexPage = () => (
             </div>
         </Section>
         <Section backgroundColor="#EDEEEF" title={<b>Projects</b>}>
-            <div className="project-grid">
-                <div className="project-badge" style={{ gridColumn: "1 / span 2" }}>
-                    <Icon iconKey="expressjs" /> Express.js
-                </div>
-                <div className="project-badge">
-                    <Icon iconKey="expressjs" /> Express.js
-                </div>
-                <div className="project-badge">
-                    <Icon iconKey="expressjs" /> Express.js
-                </div>
-                <div className="project-badge">
-                    <Icon iconKey="expressjs" /> Express.js
-                </div>
+            <div>
+                <Link to="/p">
+                    <button style={{ width: 360 }}>Check out here</button>
+                </Link>
+            </div>
+        </Section>
+        <Section backgroundColor="#FFF" title={<b>Let's have a chat</b>}>
+            <div className="sm-list-main">
+                <SocialMedia />
             </div>
         </Section>
     </Layout>

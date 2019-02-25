@@ -11,7 +11,7 @@ export default class Section extends Component {
             >
                 <div
                     style={{
-                        maxWidth: "1280px",
+                        maxWidth: this.props.maxWidth || "1280px",
                         margin: "0 auto",
                         display: "flex",
                         flexDirection: "column"

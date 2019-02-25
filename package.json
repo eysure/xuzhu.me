@@ -1,5 +1,5 @@
 {
-    "name": "Xinyang-Zhu",
+    "name": "xyzhu_me",
     "private": true,
     "description": "Personal website of Xinyang Zhu",
     "version": "0.1.0",
@@ -22,7 +22,7 @@
         "react-helmet": "^5.2.0"
     },
     "keywords": [
-        "gatsby"
+        "website"
     ],
     "license": "MIT",
     "scripts": {
