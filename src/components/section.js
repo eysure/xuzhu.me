@@ -17,16 +17,18 @@ export default class Section extends Component {
                         flexDirection: "column"
                     }}
                 >
-                    <p
-                        style={{
-                            textAlign: "center",
-                            fontSize: "2.5rem",
-                            fontFamily: "Serif",
-                            paddingBottom: "16px"
-                        }}
-                    >
-                        {this.props.title}
-                    </p>
+                    {this.props.title && (
+                        <p
+                            style={{
+                                textAlign: "center",
+                                fontSize: "2.5rem",
+                                fontFamily: "Serif",
+                                paddingBottom: "16px"
+                            }}
+                        >
+                            {this.props.title}
+                        </p>
+                    )}
                     {this.props.children}
                 </div>
             </div>

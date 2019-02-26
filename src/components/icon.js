@@ -187,5 +187,26 @@ const query = graphql`
                 }
             }
         }
+        csharp: file(relativePath: { eq: "icons/csharp.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        steam_vr: file(relativePath: { eq: "icons/steam.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        unity: file(relativePath: { eq: "icons/unity.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `;

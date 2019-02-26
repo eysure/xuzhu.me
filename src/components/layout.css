@@ -156,7 +156,7 @@ i {
     margin: 0 auto;
     max-width: 1280px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     transition: 500ms all;
 }
 
@@ -378,8 +378,8 @@ button.dark:hover {
 .skill-grid {
     width: 100%;
     display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-bottom: 32px;
 }
 .skill-badge {
@@ -399,7 +399,7 @@ button.dark:hover {
 }
 
 .skill-badge > .gatsby-image-wrapper {
-    width: 48px;
+    width: 40px;
     height: auto;
     margin-left: 0;
     margin-right: 16px;
@@ -432,7 +432,7 @@ button.dark:hover {
     display: grid;
     grid-gap: 64px;
     padding: 32px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     margin-bottom: 32px;
 }
 .project-card {
@@ -445,6 +445,7 @@ button.dark:hover {
     box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
     transition: 200ms;
     cursor: pointer;
+    overflow: auto;
 }
 .project-card:hover {
     transform: translate(0, -3px);
@@ -454,4 +455,13 @@ button.dark:hover {
 .project-card > .gatsby-image-wrapper {
     width: 100%;
     margin: 0;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 4px 16px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #ddd;
+    font-weight: 300;
 }

@@ -89,5 +89,19 @@ const query = graphql`
                 }
             }
         }
+        p_pingpong: file(relativePath: { eq: "p_pingpong.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        p_indoor_positioning: file(relativePath: { eq: "p_indoor_positioning.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `;
