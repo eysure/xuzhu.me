@@ -12,7 +12,7 @@ const tagStyle = {
     marginRight: "6px"
 };
 
-export class ProjectCard extends Component {
+export class ProjectDetail extends Component {
     renderToolsList = (techList = []) => {
         return techList.map(tech => {
             return (
@@ -36,8 +36,9 @@ export class ProjectCard extends Component {
     };
 
     render() {
+        if (!this.props.p) return null;
         return (
-            <div className="project-card" onClick={() => this.props.onClick(this.props._key)}>
+            <div className="project-detail">
                 <Image imgKey={this.props.p.imgKey} />
                 <div style={{ boxSizing: "border-box", padding: "32px", width: "100%", paddingBottom: "96px" }}>
                     <h1 style={{ margin: "8px 0 16px 0", fontSize: "2rem" }}>{this.props.p.title}</h1>
@@ -52,4 +53,4 @@ export class ProjectCard extends Component {
     }
 }
 
-export default ProjectCard;
+export default ProjectDetail;

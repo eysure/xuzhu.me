@@ -6,7 +6,7 @@ import Header from "./header";
 import Footer from "./footer";
 import "./layout.css";
 
-const Layout = ({ children }) => (
+const Layout = ({ noHeader, noFooter, children }) => (
     <StaticQuery
         query={graphql`
             query SiteTitleQuery {
@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
         `}
         render={() => (
             <>
-                <Header />
+                {!noHeader && <Header />}
                 <main
                     style={{
                         background: "#FFF",
@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
                 >
                     {children}
                 </main>
-                <Footer />
+                {!noFooter && <Footer />}
             </>
         )}
     />

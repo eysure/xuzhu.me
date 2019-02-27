@@ -139,7 +139,7 @@ i {
     width: 100%;
     background-color: rgba(20, 20, 20, 0.8);
     box-shadow: 0 5 20px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1400;
+    z-index: 1200;
     transition: 300ms;
 }
 #header-container:hover {
@@ -464,4 +464,9 @@ input {
     outline: none;
     border: 1px solid #ddd;
     font-weight: 300;
+}
+
+#project-detail-card > div:last-child {
+    overflow: auto;
+    align-items: flex-start;
 }
