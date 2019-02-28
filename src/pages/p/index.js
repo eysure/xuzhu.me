@@ -6,7 +6,7 @@ import Carousel from "../../components/carousel";
 import Section from "../../components/section";
 import ProjectCard from "../../components/project_card";
 import { navigate } from "gatsby";
-import projectList from "./project_list";
+import projectList from "../../../project_list";
 
 class Projects extends React.Component {
     state = { searchInput: "", projectSelected: this.props.p || null };

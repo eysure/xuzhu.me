@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Section from "../../components/section";
-import projectList from "../p/project_list";
+import projectList from "../../../project_list";
 import ProjectHeader from "../../components/project_header";
 import Image from "../../components/image";
 import Icon from "../../components/icon";
@@ -68,7 +68,7 @@ export default class extends Component {
                     </div>
                 </Section>
                 <Section title={<b>Design Concept</b>}>
-                    <img style={{ width: "100%", padding: "32px 0" }} src={designConcept} />
+                    <img style={{ width: "100%", padding: "32px 0" }} src={designConcept} alt="aquariusOS design concept" />
                 </Section>
                 <Section contentStyle={{ alignItems: "flex-start", padding: 64 }} style={{ background: "aliceblue" }}>
                     <h1>Long-term Project</h1>

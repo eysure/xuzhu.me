@@ -3,11 +3,10 @@ import React, { Component } from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Section from "../../components/section";
-import projectList from "../p/project_list";
+import projectList from "../../../project_list";
 import ProjectHeader from "../../components/project_header";
 import Image from "../../components/image";
 import Icon from "../../components/icon";
-import designConcept from "../../images/p/aquarius_os/design_concept.svg";
 
 export default class extends Component {
     p = projectList["indoor_positioning_system"];

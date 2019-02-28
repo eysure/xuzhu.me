@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Section from "../../components/section";
-import projectList from "./project_list";
+import projectList from "../../../project_list";
 import ProjectHeader from "../../components/project_header";
 import Image from "../../components/image";
 import Icon from "../../components/icon";
@@ -23,6 +23,14 @@ export default class extends Component {
                         <h2>A high-fidelity virtual reality Ping Pong (table tennis) trainer deployed on the HTC Vive.</h2>
                     </div>
                 </Carousel>
+                <Section contentStyle={{ padding: 16 }}>
+                    <p className="flex-row">
+                        <i className="material-icons" style={{ fontSize: "2rem", marginRight: 8 }}>
+                            call_merge
+                        </i>
+                        <span>Nikhil Kalekar, Tanu Rampal and Yufei Zhang worked with me together to made this project possible.</span>
+                    </p>
+                </Section>
                 <Section contentStyle={{ padding: 64 }}>
                     <div className="flex-row" style={{ width: "100%", maxWidth: 960, alignItems: "flex-start" }}>
                         <div className="flex" style={{ width: "50%", alignItems: "flex-start" }}>

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Section from "../../components/section";
-import projectList from "../p/project_list";
+import projectList from "../../../project_list";
 import ProjectHeader from "../../components/project_header";
 import XyzhuLogo from "../../images/xyzhu.svg";
 import Icon from "../../components/icon";
@@ -18,7 +18,7 @@ export default class extends Component {
                 <ProjectHeader p={this.p} />
                 <Section>
                     <div className="center" style={{ width: 240 }}>
-                        <img style={{ width: 240 }} src={XyzhuLogo} />
+                        <img style={{ width: 240 }} src={XyzhuLogo} alt="xyzhu.me logo" />
                     </div>
                     <h3 className="center">Xinyang Zhu's personal website.</h3>
                 </Section>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Image from "./Image";
 
 export default class Section extends Component {
     render() {

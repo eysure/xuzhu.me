@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import SEO from "../../components/seo";
 import Carousel from "../../components/carousel";
 import Section from "../../components/section";
-import projectList from "./project_list";
+import projectList from "../../../project_list";
 import ProjectHeader from "../../components/project_header";
 import Icon from "../../components/icon";
 import Image from "../../components/image";
