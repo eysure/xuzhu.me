@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Tooltip } from "@material-ui/core";
 import Icon from "./icon";
-import Image from "./image";
 
 const tagStyle = {
     backgroundColor: "#999",
@@ -37,9 +36,11 @@ export class ProjectDetail extends Component {
 
     render() {
         if (!this.props.p) return null;
+        console.log(this.props.p.detail);
         return (
             <div className="project-detail">
-                <Image imgKey={this.props.p.imgKey} />
+                {this.props.p.detail}
+                {/* <Image imgKey={this.props.p.imgKey} />
                 <div style={{ boxSizing: "border-box", padding: "32px", width: "100%", paddingBottom: "96px" }}>
                     <h1 style={{ margin: "8px 0 16px 0", fontSize: "2rem" }}>{this.props.p.title}</h1>
                     <div>{this.renderTagList(this.props.p.tags)}</div>
@@ -47,7 +48,7 @@ export class ProjectDetail extends Component {
                     <div style={{ position: "absolute", padding: 32, left: 0, bottom: 0, display: "flex", justifyContent: "start", alignItems: "center" }}>
                         {this.renderToolsList(this.props.p.techList)}
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

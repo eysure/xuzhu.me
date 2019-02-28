@@ -5,12 +5,11 @@ import SEO from "../../components/seo";
 import Carousel from "../../components/carousel";
 import Section from "../../components/section";
 import ProjectCard from "../../components/project_card";
-import { Dialog } from "@material-ui/core";
-import projectList from "../../project_list";
-import ProjectDetail from "../../components/project_detail";
+import { navigate } from "gatsby";
+import projectList from "./project_list";
 
 class Projects extends React.Component {
-    state = { searchInput: "", projectSelected: null };
+    state = { searchInput: "", projectSelected: this.props.p || null };
 
     onChange = e => {
         e.preventDefault();
@@ -29,45 +28,21 @@ class Projects extends React.Component {
         return list;
     };
 
+    handleClose = e => {
+        navigate("/p/");
+        this.setState({ projectSelected: null });
+    };
+
     render() {
         return (
             <Layout>
                 <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-                <Carousel
-                    style={{ height: 600 }}
-                    imgKey="project_carousel"
-                    title={
-                        <>
-                            <h1>{this.props.p || "Projects"}</h1>
-                            <h2>From database to UI, mobile to VR, make dreams come true.</h2>
-                        </>
-                    }
-                    cite="University of Texas at Dallas, Richardson, TX © Xinyang Zhu 2018"
-                />
+                <Carousel style={{ height: 600 }} imgKey="project_carousel" cite="University of Texas at Dallas, Richardson, TX © Xinyang Zhu 2018">
+                    <h1>Projects</h1>
+                    <h2>From database to UI, mobile to VR, make dreams come true.</h2>
+                </Carousel>
                 <Section maxWidth="100%" backgroundColor="#EDEEEF">
-                    <div id="search-bar" style={{ maxWidth: "100%", width: "600px" }}>
-                        {/* <input
-                            name="searchInput"
-                            type="text"
-                            value={this.state.searchInput}
-                            onChange={this.onChange}
-                            placeholder="Search..."
-                            style={{ width: "100%" }}
-                        /> */}
-                    </div>
-
-                    <div className="project-card-container">{this.renderProjectCard()}</div>
-                    <Dialog
-                        id="project-detail-card"
-                        open={this.state.projectSelected ? true : false}
-                        onClose={() => this.setState({ projectSelected: null })}
-                        PaperProps={{
-                            elevation: 24,
-                            style: { maxWidth: "100%", width: 1200, maxHeight: "fit-content", borderRadius: 16, margin: "80px 48px" }
-                        }}
-                    >
-                        <ProjectDetail cardMode={true} _key={this.state.projectSelected} p={projectList[this.state.projectSelected]} />
-                    </Dialog>
+                    <div className="project-card-container center">{this.renderProjectCard()}</div>
                 </Section>
             </Layout>
         );
@@ -75,22 +50,3 @@ class Projects extends React.Component {
 }
 
 export default Projects;
-
-export const query = graphql`
-    {
-        allMarkdownRemark {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        path
-                        title
-                        date
-                        author
-                    }
-                    excerpt
-                }
-            }
-        }
-    }
-`;

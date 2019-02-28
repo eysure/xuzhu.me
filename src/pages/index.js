@@ -8,22 +8,16 @@ import { Link } from "gatsby";
 import Icon from "../components/icon";
 import Divider from "../components/divider";
 import SocialMedia from "../components/social_media";
+import { navigate } from "gatsby";
 
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <Carousel
-            imgKey="home_carousel"
-            title={
-                <>
-                    <h1>Hi, I'm Xinyang</h1>
-                    <h2>A developer for ultimate user experience</h2>
-                </>
-            }
-            cite="© Xinyang Zhu 2018"
-        />
+        <Carousel imgKey="home_carousel" cite="© Xinyang Zhu 2018" style={{ height: 800 }} contentStyle={{ marginTop: 20 }}>
+            <h1>Hi, I'm Xinyang Zhu</h1>
+            <h2>A full-stack developer for ultimate user experience</h2>
+        </Carousel>
         <Section
-            backgroundColor="#EDEEEF"
             title={
                 <span>
                     To obtain an <b>internship</b> position as a software engineer in 2019.
@@ -119,19 +113,17 @@ const IndexPage = () => (
             <Divider center={<h3>Mobile / Desktop</h3>} />
             <div className="skill-grid">
                 <div className="skill-badge">
-                    <Icon iconKey="android" /> Android Studio
+                    <Icon iconKey="android" /> Android SDK
                 </div>
             </div>
         </Section>
-        <Section backgroundColor="#EDEEEF" title={<b>Projects</b>}>
-            <div>
-                <Link to="/p">
-                    <button style={{ width: 360 }}>Check out here</button>
-                </Link>
+        <Section title={<b>Projects</b>}>
+            <div className="center">
+                <button onClick={() => navigate("/p")}>Check out here</button>
             </div>
         </Section>
-        <Section backgroundColor="#FFF" title={<b>Let's have a chat</b>}>
-            <div className="sm-list-main">
+        <Section title={<b>Let's have a chat</b>}>
+            <div className="sm-list-main center">
                 <SocialMedia />
             </div>
         </Section>

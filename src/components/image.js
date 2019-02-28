@@ -103,5 +103,54 @@ const query = graphql`
                 }
             }
         }
+        aquarius_os_logo_title: file(relativePath: { eq: "p/aquarius_os/aquarius_os_logo_title.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        aq_pc_show: file(relativePath: { eq: "p/aquarius_os/pc_show.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 594) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        dalao_carousel: file(relativePath: { eq: "p/dalao_hotpot/carousel.jpg" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        dalao_logo: file(relativePath: { eq: "p/dalao_hotpot/logo.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        ips_logo: file(relativePath: { eq: "p/indoor_positioning_system/logo.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        vr_pp_carousel: file(relativePath: { eq: "p/vr_ping_pong_trainer/background.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        vr_pp_logo: file(relativePath: { eq: "p/vr_ping_pong_trainer/logo.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 1024) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `;

@@ -6,4 +6,6 @@
 <h2 align="center">Xinyang Zhu's personal website</h2>
 </p>
 
+[![Build Status](https://travis-ci.org/eysure/xyzhu.me.svg?branch=master)](https://travis-ci.org/eysure/xyzhu.me)
+
 This site is made using [Gatsby](https://www.gatsbyjs.org/). All information on this site is NOT regard as open source and should NOT be spread.

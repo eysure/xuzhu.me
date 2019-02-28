@@ -208,5 +208,40 @@ const query = graphql`
                 }
             }
         }
+        graphql: file(relativePath: { eq: "icons/graphql.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        bluetooth: file(relativePath: { eq: "icons/bluetooth.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        arduino: file(relativePath: { eq: "icons/arduino.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        vive: file(relativePath: { eq: "icons/vive.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        steam: file(relativePath: { eq: "icons/steam.png" }) {
+            childImageSharp {
+                fluid(maxHeight: 512) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
     }
 `;

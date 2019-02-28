@@ -7,16 +7,10 @@ import Carousel from "../components/carousel";
 const AboutPage = () => (
     <Layout>
         <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
-        <Carousel
-            imgKey="about_carousel"
-            title={
-                <>
-                    <h1>More About Me</h1>
-                    <h2>This page is in construction now, please come latter</h2>
-                </>
-            }
-            cite="University of Texas at Dallas, Richardson, TX © Xinyang Zhu 2018"
-        />
+        <Carousel imgKey="about_carousel" cite="University of Texas at Dallas, Richardson, TX © Xinyang Zhu 2018">
+            <h1>More About Me</h1>
+            <h2>This page is in construction now, please come latter</h2>
+        </Carousel>
     </Layout>
 );
 

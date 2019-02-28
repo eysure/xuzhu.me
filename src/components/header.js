@@ -3,7 +3,7 @@ import React from "react";
 import xyzhu from "../images/xyzhu_white.svg";
 
 const Header = () => (
-    <header id="header-container">
+    <header id="header-container" className="animated fadeInDown faster">
         <div id="header">
             <Link to="/">
                 <div>

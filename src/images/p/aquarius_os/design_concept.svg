@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="170.59367 48.65432 1661.8087 1471.3457" width="1661.8087" height="1471.3457">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="170.59367" y="48.65432">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="4.36"/>
+      <feOffset in="blur" result="offset" dx="-5" dy="-5"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <font-face font-family="Helvetica Neue" font-size="24" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.8.2 
+    <dc:date>2019-02-28 04:19:06 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_2" filter="url(#Shadow)">
+        <rect x="186.59367" y="64.65432" width="1063" height="670" fill="#666" fill-opacity=".041571624"/>
+        <path d="M 186.59367 64.65432 L 1249.5937 64.65432 L 1249.5937 734.6543 L 186.59367 734.6543 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(191.59367 69.65432)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="0" y="23">Root</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3" filter="url(#Shadow)">
+        <rect x="234.36066" y="132" width="1067" height="670" fill="#9a9ace" id="path"/>
+        <clipPath id="clip_path">
+          <use xl:href="#path"/>
+        </clipPath>
+        <g clip-path="url(#clip_path)">
+          <image xl:href="image1.jpg" width="2560" height="1440" transform="matrix(.41679688 0 0 .4652778 234.36066 132)"/>
+        </g>
+        <rect x="234.36066" y="132" width="1067" height="670" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(239.36066 137)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="white" x="0" y="23">Desktop</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4" filter="url(#Shadow)">
+        <rect x="286" y="212.66667" width="1067" height="41" fill="black" fill-opacity=".7000171"/>
+        <rect x="286" y="212.66667" width="1067" height="41" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(291 217.66667)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="white" x="0" y="23">MainFrame</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5" filter="url(#Shadow)">
+        <rect x="286" y="262" width="1067" height="610" fill="white" fill-opacity=".10187614"/>
+        <path d="M 286 262 L 1353 262 L 1353 872 L 286 872 Z" stroke="#00b5ff" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(291 267)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="white" x="0" y="23">AppHost</tspan>
+        </text>
+      </g>
+      <g id="Graphic_6" filter="url(#Shadow)">
+        <path d="M 354 302 L 863 302 C 866.3137 302 869 304.6863 869 308 L 869 424 C 869 427.3137 866.3137 430 863 430 L 354 430 C 350.6863 430 348 427.3137 348 424 L 348 308 C 348 304.6863 350.6863 302 354 302 Z" fill="white"/>
+        <path d="M 354 302 L 863 302 C 866.3137 302 869 304.6863 869 308 L 869 424 C 869 427.3137 866.3137 430 863 430 L 354 430 C 350.6863 430 348 427.3137 348 424 L 348 308 C 348 304.6863 350.6863 302 354 302 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(353 351.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="226.82" y="23">App1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_7" filter="url(#Shadow)">
+        <path d="M 510 391 L 1058 391 C 1061.3137 391 1064 393.6863 1064 397 L 1064 683 C 1064 686.3137 1061.3137 689 1058 689 L 510 689 C 506.6863 689 504 686.3137 504 683 L 504 397 C 504 393.6863 506.6863 391 510 391 Z" fill="white"/>
+        <path d="M 510 391 L 1058 391 C 1061.3137 391 1064 393.6863 1064 397 L 1064 683 C 1064 686.3137 1061.3137 689 1058 689 L 510 689 C 506.6863 689 504 686.3137 504 683 L 504 397 C 504 393.6863 506.6863 391 510 391 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(509 525.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="246.32" y="23">App2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_8" filter="url(#Shadow)">
+        <path d="M 354 636 L 633 636 C 636.3137 636 639 638.6863 639 642 L 639 805 C 639 808.3137 636.3137 811 633 811 L 354 811 C 350.6863 811 348 808.3137 348 805 L 348 642 C 348 638.6863 350.6863 636 354 636 Z" fill="white"/>
+        <path d="M 354 636 L 633 636 C 636.3137 636 639 638.6863 639 642 L 639 805 C 639 808.3137 636.3137 811 633 811 L 354 811 C 350.6863 811 348 808.3137 348 805 L 348 642 C 348 638.6863 350.6863 636 354 636 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(353 709.164)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="111.82" y="23">App3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_9" filter="url(#Shadow)">
+        <path d="M 991 481 L 1292 481 C 1295.3137 481 1298 483.6863 1298 487 L 1298 815 C 1298 818.3137 1295.3137 821 1292 821 L 991 821 C 987.6863 821 985 818.3137 985 815 L 985 487 C 985 483.6863 987.6863 481 991 481 Z" fill="white"/>
+        <path d="M 991 481 L 1292 481 C 1295.3137 481 1298 483.6863 1298 487 L 1298 815 C 1298 818.3137 1295.3137 821 1292 821 L 991 821 C 987.6863 821 985 818.3137 985 815 L 985 487 C 985 483.6863 987.6863 481 991 481 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(990 636.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="122.82" y="23">App4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10" filter="url(#Shadow)">
+        <rect x="562" y="595" width="1067" height="674" fill="white" fill-opacity="0"/>
+        <path d="M 562 595 L 1629 595 L 1629 1269 L 562 1269 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(567 600)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="0" y="23">AccessControl</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17" filter="url(#Shadow)">
+        <path d="M 945 780 L 1246 780 C 1249.3137 780 1252 782.6863 1252 786 L 1252 1078 C 1252 1081.3137 1249.3137 1084 1246 1084 L 945 1084 C 941.6863 1084 939 1081.3137 939 1078 L 939 786 C 939 782.6863 941.6863 780 945 780 Z" fill="white"/>
+        <path d="M 945 780 L 1246 780 C 1249.3137 780 1252 782.6863 1252 786 L 1252 1078 C 1252 1081.3137 1249.3137 1084 1246 1084 L 945 1084 C 941.6863 1084 939 1081.3137 939 1078 L 939 786 C 939 782.6863 941.6863 780 945 780 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(944 917.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="87.72" y="23">LoginDialog</tspan>
+        </text>
+      </g>
+      <g id="Graphic_11" filter="url(#Shadow)">
+        <rect x="698.59766" y="854" width="1067" height="615" fill="white" fill-opacity="0"/>
+        <path d="M 698.59766 854 L 1765.5977 854 L 1765.5977 1469 L 698.59766 1469 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(703.59766 859)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="0" y="23">NotificationBar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_12" filter="url(#Shadow)">
+        <rect x="1509" y="886" width="286" height="628" fill="white" fill-opacity=".11733"/>
+        <path d="M 1509 886 L 1795 886 L 1795 1514 L 1509 1514 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8.0,8.0" stroke-width="2"/>
+        <text transform="translate(1514 891)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="0" y="23">Notification Bar</tspan>
+        </text>
+      </g>
+      <g id="Graphic_13" filter="url(#Shadow)">
+        <path d="M 1545.4023 933 L 1819.4023 933 C 1822.716 933 1825.4023 935.6863 1825.4023 939 L 1825.4023 1011 C 1825.4023 1014.3137 1822.716 1017 1819.4023 1017 L 1545.4023 1017 C 1542.0886 1017 1539.4023 1014.3137 1539.4023 1011 L 1539.4023 939 C 1539.4023 935.6863 1542.0886 933 1545.4023 933 Z" fill="#ebebeb"/>
+        <path d="M 1545.4023 933 L 1819.4023 933 C 1822.716 933 1825.4023 935.6863 1825.4023 939 L 1825.4023 1011 C 1825.4023 1014.3137 1822.716 1017 1819.4023 1017 L 1545.4023 1017 C 1542.0886 1017 1539.4023 1014.3137 1539.4023 1011 L 1539.4023 939 C 1539.4023 935.6863 1542.0886 933 1545.4023 933 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(1544.4023 960.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="66.888" y="23">Notification 1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_14" filter="url(#Shadow)">
+        <path d="M 1546.4023 1035 L 1820.4023 1035 C 1823.716 1035 1826.4023 1037.6863 1826.4023 1041 L 1826.4023 1113 C 1826.4023 1116.3137 1823.716 1119 1820.4023 1119 L 1546.4023 1119 C 1543.0886 1119 1540.4023 1116.3137 1540.4023 1113 L 1540.4023 1041 C 1540.4023 1037.6863 1543.0886 1035 1546.4023 1035 Z" fill="#ebebeb"/>
+        <path d="M 1546.4023 1035 L 1820.4023 1035 C 1823.716 1035 1826.4023 1037.6863 1826.4023 1041 L 1826.4023 1113 C 1826.4023 1116.3137 1823.716 1119 1820.4023 1119 L 1546.4023 1119 C 1543.0886 1119 1540.4023 1116.3137 1540.4023 1113 L 1540.4023 1041 C 1540.4023 1037.6863 1543.0886 1035 1546.4023 1035 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(1545.4023 1062.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="66.888" y="23">Notification 2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_15" filter="url(#Shadow)">
+        <path d="M 1546.4023 1137 L 1820.4023 1137 C 1823.716 1137 1826.4023 1139.6863 1826.4023 1143 L 1826.4023 1215 C 1826.4023 1218.3137 1823.716 1221 1820.4023 1221 L 1546.4023 1221 C 1543.0886 1221 1540.4023 1218.3137 1540.4023 1215 L 1540.4023 1143 C 1540.4023 1139.6863 1543.0886 1137 1546.4023 1137 Z" fill="#ebebeb"/>
+        <path d="M 1546.4023 1137 L 1820.4023 1137 C 1823.716 1137 1826.4023 1139.6863 1826.4023 1143 L 1826.4023 1215 C 1826.4023 1218.3137 1823.716 1221 1820.4023 1221 L 1546.4023 1221 C 1543.0886 1221 1540.4023 1218.3137 1540.4023 1215 L 1540.4023 1143 C 1540.4023 1139.6863 1543.0886 1137 1546.4023 1137 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <text transform="translate(1545.4023 1164.664)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="24" font-weight="400" fill="black" x="66.888" y="23">Notification 3</tspan>
+        </text>
+      </g>
+      <g id="Line_18">
+        <line x1="186.59367" y1="734.6543" x2="698.59766" y2="1469.1719" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

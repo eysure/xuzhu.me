@@ -5,9 +5,9 @@ export default class Carousel extends Component {
     render() {
         return (
             <div className="carousel" style={this.props.style}>
-                <Image imgKey={this.props.imgKey} className="carousel-image" style={this.props.imgStyle} />
-                <div className="carousel-title" style={this.props.titleStyle}>
-                    {this.props.title}
+                {this.props.imgKey && <Image imgKey={this.props.imgKey} className="carousel-image" style={this.props.imgStyle} />}
+                <div className="carousel-content" style={this.props.contentStyle}>
+                    {this.props.children}
                 </div>
                 <span className="carousel-cite" style={this.props.citeStyle}>
                     {this.props.cite}

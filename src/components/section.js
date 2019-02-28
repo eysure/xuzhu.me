@@ -1,24 +1,31 @@
 import React, { Component } from "react";
+import Image from "./Image";
 
 export default class Section extends Component {
     render() {
         return (
-            <div
+            <section
+                className="animated fadeIn"
                 style={{
-                    padding: "96px 0",
-                    backgroundColor: this.props.backgroundColor
+                    backgroundColor: this.props.backgroundColor,
+                    ...this.props.style
                 }}
             >
                 <div
                     style={{
-                        maxWidth: this.props.maxWidth || "1280px",
+                        padding: "64px 32px",
+                        width: "100%",
+                        boxSizing: "border-box",
+                        maxWidth: this.props.maxWidth || (this.props.fullWidth && "100%") || "1280px",
                         margin: "0 auto",
                         display: "flex",
-                        flexDirection: "column"
+                        flexDirection: "column",
+                        alignItems: "center",
+                        ...this.props.contentStyle
                     }}
                 >
                     {this.props.title && (
-                        <p
+                        <div
                             style={{
                                 textAlign: "center",
                                 fontSize: "2.5rem",
@@ -27,11 +34,11 @@ export default class Section extends Component {
                             }}
                         >
                             {this.props.title}
-                        </p>
+                        </div>
                     )}
                     {this.props.children}
                 </div>
-            </div>
+            </section>
         );
     }
 }
