@@ -25,7 +25,7 @@ const IndexPage = () => (
             }
         >
             <div className="flex-row">
-                <a className="button" href="https://docs.google.com/document/export?format=pdf&id=1w81QS9r4sta0MFz4QKj7qDqU5Zi7eXf236_bhiIkUi0">
+                <a className="button" href="https://www.dropbox.com/s/tdl79fhpc50cw41/Xinyang_Zhu_Resume.pdf?dl=0">
                     Download Resume
                 </a>
                 <Link to="/contact">
