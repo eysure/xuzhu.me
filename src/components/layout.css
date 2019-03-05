@@ -135,7 +135,7 @@ h3 {
     color: #666;
     font-weight: 400;
 }
-i.with-text {
+.with-text {
     margin-right: 12px;
 }
 p {
@@ -357,6 +357,7 @@ button:hover {
     text-decoration: none;
     background-color: black;
     color: white;
+    text-shadow: none;
 }
 .button.dark,
 button.dark {
@@ -395,6 +396,11 @@ button.dark.invisible:hover,
 button.dark.invisible:active,
 .button.dark.invisible:active {
     background-color: #666;
+}
+
+a > i,
+button > i {
+    margin-right: 8px;
 }
 
 .sm-list {

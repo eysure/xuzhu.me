@@ -117,7 +117,7 @@ const IndexPage = () => (
                 </div>
             </div>
         </Section>
-        <Section title={<b>Projects</b>}>
+        <Section title={<b>All featured projects</b>}>
             <div className="center">
                 <button onClick={() => navigate("/p")}>Check out here</button>
             </div>
