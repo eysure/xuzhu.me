@@ -17,13 +17,7 @@ const IndexPage = () => (
             <h1>Hi, I'm Xinyang Zhu</h1>
             <h2>A full-stack developer for ultimate user experience</h2>
         </Carousel>
-        <Section
-            title={
-                <span>
-                    To obtain an <b>internship</b> position as a software engineer in 2019.
-                </span>
-            }
-        >
+        <Section title={<span>Currently seeking for new-grad SDE/Full-Stack oppotunity in 2020.</span>}>
             <div className="flex-row">
                 <a className="button" href="https://www.dropbox.com/s/tdl79fhpc50cw41/Xinyang_Zhu_Resume.pdf?dl=0">
                     Download Resume
