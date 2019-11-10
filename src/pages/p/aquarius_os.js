@@ -9,7 +9,7 @@ import Image from "../../components/image";
 import Icon from "../../components/icon";
 import designConcept from "../../images/p/aquarius_os/design_concept.svg";
 
-export default class extends Component {
+export default class AquariusOS extends Component {
     p = projectList["aquarius_os"];
 
     render() {

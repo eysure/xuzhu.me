@@ -7,7 +7,7 @@ export default {
         imgKey: "p_aquariusos",
         link: "aquarius_os",
         repo: "https://www.github.com/eysure/aquarius",
-        demo: "http://aquarius-demo.herokuapp.com"
+        demo: "http://aqos.herokuapp.com"
     },
     xyzhu_me: {
         title: "Xyzhu.me",
