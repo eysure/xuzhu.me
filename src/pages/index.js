@@ -10,23 +10,24 @@ import Divider from "../components/divider";
 import SocialMedia from "../components/social_media";
 import { navigate } from "gatsby";
 
+import { resumeLink } from "./resume";
+
 const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
         <Carousel imgKey="home_carousel" cite="© Xinyang Zhu 2018" style={{ height: 800 }} contentStyle={{ marginTop: 20 }}>
             <h1>Hi, I'm Xinyang Zhu</h1>
             <h2>A full-stack developer for ultimate user experience</h2>
-        </Carousel>
-        <Section title={<span>Currently seeking for new-grad SDE/Full-Stack oppotunity in 2020.</span>}>
+            <br />
             <div className="flex-row">
-                <a className="button" href="https://www.dropbox.com/s/tdl79fhpc50cw41/Xinyang_Zhu_Resume.pdf?dl=0">
-                    Download Resume
+                <a className="button dark" href={resumeLink + "?dl=0"}>
+                    View Resume
                 </a>
                 <Link to="/contact">
-                    <button>Contact me</button>
+                    <button className="button dark">Contact me</button>
                 </Link>
             </div>
-        </Section>
+        </Carousel>
         <Section title={<b>Technical Skills</b>}>
             <Divider center={<h3>Programming Languages</h3>} />
             <div className="skill-grid">
@@ -114,11 +115,6 @@ const IndexPage = () => (
         <Section title={<b>All featured projects</b>}>
             <div className="center">
                 <button onClick={() => navigate("/p")}>Check out here</button>
-            </div>
-        </Section>
-        <Section title={<b>Let's have a chat</b>}>
-            <div className="sm-list-main center">
-                <SocialMedia />
             </div>
         </Section>
     </Layout>
